@@ -1,0 +1,6 @@
+<!-- TODO -->
+<!ENTITY doit.menu.label  "Doit.im扩展">
+<!ENTITY doit.quickadd.label  "新建 Doit.im 待办">
+<!ENTITY doit.quickadd.accesskey "Q">
+<!ENTITY doit.configuration "配置">
+<!ENTITY doit.about "关于">

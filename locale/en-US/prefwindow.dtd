@@ -1,0 +1,10 @@
+<!ENTITY config.username "Email">
+<!ENTITY config.password "Password">
+<!ENTITY doit.version "Version:">
+<!ENTITY doit.version.number "1.0">
+<!ENTITY doit.support "Email:">
+<!ENTITY doit.support.email "support@doit.im">
+<!ENTITY doit.web "WebSite:">
+<!ENTITY doit.web.site "http://doit.im">
+<!ENTITY doit.configuration "Configuration">
+<!ENTITY doit.about "About">

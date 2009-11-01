@@ -1,0 +1,5 @@
+#doit-im-status-bar-img {
+    list-style-image: url(chrome://doit/skin/doit.png);
+    height: 16px;
+    width: 16px;
+}

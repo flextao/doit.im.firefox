@@ -1,0 +1,10 @@
+<!ENTITY config.username "邮件">
+<!ENTITY config.password "密码">
+<!ENTITY doit.version "版本:">
+<!ENTITY doit.version.number "1.0">
+<!ENTITY doit.support "邮箱:">
+<!ENTITY doit.support.email "support@doit.im">
+<!ENTITY doit.web "网址:">
+<!ENTITY doit.web.site "http://doit.im">
+<!ENTITY doit.configuration "配置">
+<!ENTITY doit.about "关于">

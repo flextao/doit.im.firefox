@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+		<em:name>doit.im</em:name>
+		<em:version>1.0</em:version>
+		<em:description>
+			Plugin for Doit.im. After installed the plugin, click Doit.im icon on
+			status bar to setup your email and password for login Doit.im first.
+			Then, all your need is: select text in browser, right click mouse, select
+			'New Doit.im task' on popup menu, done.
+		</em:description>
+		<em:creator>Doit.im Team</em:creator>
+		<em:id>{8091ddfd-9ee6-4498-ad6c-274daac67083}</em:id>
+		
+		<em:targetApplication>
+			<!-- Firefox -->
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.5</em:minVersion>
+				<em:maxVersion>3.6.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		
+		<em:iconURL>chrome://doit/skin/doit.png</em:iconURL>
+		<em:homepageURL>http://www.doit.im</em:homepageURL>
+	</Description>
+</RDF>

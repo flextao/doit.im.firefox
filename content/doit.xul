@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://doit/skin/doit.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://doit/locale/doit.dtd">
+
+<overlay id="doit-overlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script src="chrome://doit/content/json2.js" />
+	<script src="chrome://doit/content/util.js" />
+	<script src="chrome://doit/content/xmlhttp.js" />
+	<script src="chrome://doit/content/overlay.js" />
+		   
+	<stringbundleset>
+		<stringbundle id="doit-strings" 
+			src="chrome://doit/locale/doit.properties"/>
+	</stringbundleset>
+
+	<menupopup id="menu_ToolsPopup">
+        <menuitem id="doit-showOpinions" class="menuitem-iconic" 
+            image="chrome://doit/skin/doit.png"
+            oncommand="doit.showOptions();" label="&doit.menu.label;"/>
+	</menupopup>													 
+  
+	<popup id="contentAreaContextMenu">
+		<menuitem id="context-quickadd" label="&doit.quickadd.label;"
+			accesskey="&doit.quickadd.accesskey;"
+			insertafter="context-stop"
+			oncommand="doit.quickAddMenuItemCommand(event)"/>
+	</popup>
+    <statusbar id="status-bar">
+        <statusbarpanel id="doit-im-status-bar" aria-describedby="doit-im-status-bar-img"
+        				role="button" onmouseup="doit.showOptions()">
+        	<hbox id="cs_presence">
+                <image id="doit-im-status-bar-img"/>
+                <label id="doit-im-status-bar-lab" value="Doit.im"/>
+            </hbox>
+        </statusbarpanel>
+    </statusbar>
+</overlay>
+

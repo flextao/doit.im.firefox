@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://doit/skin/doit.css" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://doit/locale/prefwindow.dtd">
+
+<dialog id="opinionsPreference" title="Doit.im Preferences"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	buttons="accept,cancel"
+	orient="vertical"
+    buttonlabelaccept="Save"
+	buttonlabelcancel="Cancel"
+	onload="doit_options.LoadOptions();"
+	ondialogaccept="return doit_options.doOK();"  
+	ondialogcancel="return doit_options.doCancel();" >
+
+	<script type="application/x-javascript" 
+		src="chrome://doit/content/util.js" />
+	<script type="application/x-javascript" 
+		src="chrome://doit/content/options.js" />
+	<stringbundleset>
+		<stringbundle id="doit-strings" 
+			src="chrome://doit/locale/options.properties"/>
+	</stringbundleset>
+	<tabbox>
+		<tabs>
+			<tab label="&doit.configuration;"/>
+			<tab label="&doit.about;"/>
+		</tabs>
+		<tabpanels>
+			<tabpanel id="id1">
+                <!--定义用户名输入框-->
+                <vbox>
+                    <label accesskey="U" control="textstringpref" style="display:block;margin-bottom:10px;color:#555555;">&config.username;</label>
+                    <textbox id="gUserName" preference="stringpref1" style="border:1px solid #3b6e22;color:#666666;"/>
+                    <separator class="thin"/>
+                    <!--定义密码输入框-->
+                    <label accesskey="p" control="textstringpref" style="display:block;margin-bottom:10px;color:#555555;">&config.password;</label>
+                    <textbox id="gPwd" type="password" preference="stringpref2" style="border:1px solid #3b6e22;color:#666666;"/>
+                </vbox>
+			</tabpanel>
+			<tabpanel id="id2">
+                <groupbox align="center" orient="horizontal">
+                <vbox>
+                  <hbox>
+                  <text value="&doit.version;" style="display:block;margin-bottom:10px;color:#555555;" />
+                  <text value="&doit.version.number;" style="display:block;margin-bottom:10px;color:#555555;"/>
+                  </hbox>
+                  <separator class="thin"/>
+                  <hbox>
+                  <text value="&doit.support;" style="display:block;margin-bottom:10px;color:#555555;" />
+                  <text value="&doit.support.email;" style="display:block;margin-bottom:10px;color:#555555;"/>
+                  </hbox>
+                  <separator class="thin"/>
+                  <hbox>
+                  <text value="&doit.web;" style="display:block;margin-bottom:10px;color:#555555;" />
+                  <text value="&doit.web.site;" style="display:block;margin-bottom:10px;color:#555555;"/>
+                  </hbox>
+                  <separator class="thin"/>
+                </vbox>
+                </groupbox>
+			</tabpanel>
+		</tabpanels>
+	</tabbox>
+</dialog>

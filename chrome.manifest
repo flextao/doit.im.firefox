@@ -1,0 +1,7 @@
+content doit jar:chrome/doit.jar!/content/
+locale	doit	en-US		jar:chrome/doit.jar!/locale/en-US/
+locale  doit    zh-CN       jar:chrome/doit.jar!/locale/zh-CN/
+skin	doit	classic/1.0	jar:chrome/doit.jar!/skin/
+
+overlay	chrome://browser/content/browser.xul	chrome://doit/content/doit.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://doit/skin/doit.css

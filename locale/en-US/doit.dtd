@@ -1,0 +1,6 @@
+<!-- TODO -->
+<!ENTITY doit.menu.label  "Doit.im Ext">
+<!ENTITY doit.quickadd.label  "New Doit.im task">
+<!ENTITY doit.quickadd.accesskey "Q">
+<!ENTITY doit.configuration "Configuration">
+<!ENTITY doit.about "About">
