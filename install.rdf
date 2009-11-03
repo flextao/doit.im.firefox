@@ -5,7 +5,7 @@
 
 	<Description about="urn:mozilla:install-manifest">
 		<em:name>doit.im</em:name>
-		<em:version>1.0</em:version>
+		<em:version>1.0.1</em:version>
 		<em:description>
 			Plugin for Doit.im. After installed the plugin, click Doit.im icon on
 			status bar to setup your email and password for login Doit.im first.
